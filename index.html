@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Christmas Card</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="icon" href="icon.png">
+</head>
+<body>
+	<div class="ornaments">
+		<div class="ornamentOuter">
+			<img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hyaXN0bWFzfGVufDB8fDB8fHww" class="ornament" onclick="changeSRC(this)">
+		</div>
+		<div class="ornamentOuter">
+			<img src="https://images.unsplash.com/photo-1511268011861-691ed210aae8?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hyaXN0bWFzfGVufDB8fDB8fHww" class="ornament" onclick="changeSRC(this)">
+		</div>
+		<div class="ornamentOuter">
+			<img src="https://images.unsplash.com/photo-1512389055488-8d82cb26ba6c?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2hyaXN0bWFzfGVufDB8fDB8fHww" class="ornament" onclick="changeSRC(this)">
+		</div>
+		<div class="ornamentOuter">
+			<img src="https://images.unsplash.com/photo-1480618757544-81c31930008e?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2hyaXN0bWFzfGVufDB8fDB8fHww" class="ornament" onclick="changeSRC(this)">
+		</div>
+		<div class="ornamentOuter">
+			<img src="https://images.unsplash.com/photo-1513519683267-4ee6761728ac?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNocmlzdG1hc3xlbnwwfHwwfHx8MA%3D%3D" class="ornament" onclick="changeSRC(this)">
+		</div>
+	</div>
+	<div class="card">
+		<h1 contenteditable oninput="updateAddress()" id="hh">Happy Holidays!</h1>
+		<p contenteditable oninput="updateAddress()" id="pp">Click any of the text or images on this page to edit, then just copy the link and send!</p>
+		<p contenteditable oninput="updateAddress()" id="ppp">- NAME</p>
+	</div>
+	<canvas id="canvas1"></canvas>
+	<canvas id="canvas2"></canvas>
+	<canvas id="canvas3"></canvas>
+	<script src="app.js"></script>
+</body>
+</html>
